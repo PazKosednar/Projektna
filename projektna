@@ -10,10 +10,10 @@ int main()
 {
 	srand(time(NULL));
 
-	const int velikostPolja = 40;
+	const int velikostPolja = 50;
 	int a[velikostPolja] = { 0 };
 	int b[velikostPolja] = { 0 };
-	int x = 1;
+	int x = 0;
 
 	for (int i = 0; i < velikostPolja; i++)
 	{
@@ -25,7 +25,7 @@ int main()
 
 	for (int i = 1; i < velikostPolja; i++)
 	{
-		if (a[i] == a[i + 1])
+		if (a[i] == a[i - 1])
 		{
 			x++;
 		}
